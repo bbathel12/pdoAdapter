@@ -1,0 +1,22 @@
+{
+    "name": "brice/pdo",
+    "description": "an adapter for mysqli to use pdo",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Brice Bathel",
+            "email": "bricebathel@hotmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.2",
+        "phpunit/dbunit": "^4.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "PDO\\Mysqli\\": "src/mysqli/",
+            "PDOAdapter\\": "src/pdoAdapter",
+            "PHPUnit\\":"vendor/phpunit/phpunit/src/"
+        }
+    }
+}

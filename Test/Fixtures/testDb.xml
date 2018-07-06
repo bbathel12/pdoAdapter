@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="homestead">
+	<table_structure name="users">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="phone" Type="varchar(16)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="email" Type="varchar(100)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="password" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="active" Type="tinyint(3) unsigned" Null="NO" Key="" Default="1" Extra="" Comment="" />
+		<field Field="developer" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="verified" Type="tinyint(4)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="remember_token" Type="varchar(100)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="key" Type="int(11)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="created_at" Type="timestamp" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="updated_at" Type="timestamp" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="profile_reminded_at" Type="datetime" Null="NO" Key="" Default="CURRENT_TIMESTAMP" Extra="" Comment="" />
+		<key Table="users" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="19" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="users" Non_unique="0" Key_name="users_email_unique" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="19" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="users" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="19" Avg_row_length="862" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="20" Create_time="2018-06-20 14:33:28" Collation="utf8mb4_unicode_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="users">
+	<row>
+		<field name="id">1</field>
+		<field name="name">blahblahblah</field>
+		<field name="phone"></field>
+		<field name="email">blahblahblah</field>
+		<field name="password"></field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">djOr0SxNjMnCO99aOIBgjO35mMbzPBhKQ6VFiBbKEXXqpODff8BmAo3PyrlI</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-15 22:03:58</field>
+		<field name="updated_at">2018-05-15 22:03:58</field>
+		<field name="profile_reminded_at">2018-05-15 12:03:58</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">asdfadfs</field>
+		<field name="phone"></field>
+		<field name="email">Bricebathel@hotmail.com</field>
+		<field name="password">$2y$10$uAIcfJN4qcuAHOGH2BUfGeZoCpALIqZMKM918SHbLG6cZkPDEW8cG</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">0</field>
+		<field name="remember_token">s1l0mpbSWO19diXuF9UmiGgzEEuU2yWfa3Eor25B3VrrA1tsR34QWZ2fNVvM</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-15 22:05:45</field>
+		<field name="updated_at">2018-06-19 23:29:01</field>
+		<field name="profile_reminded_at">2018-06-11 16:33:47</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">brice@hitpath.com</field>
+		<field name="password">$2y$10$aVr4W6LmLQjrvceunNGY2u/qbmOKy.tSBDl0.IwyIelqMiJZgaJcC</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">WsbuxL5WCr7ekLn8Lo4lMl0mW7sN12YZ8dlkGqPguEJwvVpbnQDlDmz0D2Eq</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:19:05</field>
+		<field name="updated_at">2018-05-22 02:19:05</field>
+		<field name="profile_reminded_at">2018-05-21 16:19:05</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">blah@hitpath.com</field>
+		<field name="password">$2y$10$rEz0p4D6EdDGMZUfsjnZBOzldrmMqminYVMm8RGJi1UwMVHUM2JkW</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">DUeXCNVN1fTTMYVpDkoymhPCv82iHmNnPJvmwMtb6Ox4i9imt4ZtjfFIn6P8</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:19:55</field>
+		<field name="updated_at">2018-05-22 02:19:55</field>
+		<field name="profile_reminded_at">2018-05-21 16:19:55</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">hitpath@hitpath.com</field>
+		<field name="password">$2y$10$JFBzHJllhSMxyKB55vzGZueJuxq3UogRyW1W2maeWx/sOMzzjNZPa</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">nSXZN1q2mR2rbiugHucGEDiYKxjuFkdfwvH26dFPQvpbcJ26J50Ro6pEFde2</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:34:31</field>
+		<field name="updated_at">2018-05-22 02:34:31</field>
+		<field name="profile_reminded_at">2018-05-21 16:34:31</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fake3@hitpath.com</field>
+		<field name="password">$2y$10$7ChBfRWqRR5SGazR12L1sOm43pD45Hs4Ayrjo/hT5YF69qHyyANjm</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">T2pG9XqI9FYgZbojcQVyAF6cG6gYN3B33BvaddvUAPDrk3WVKkYRcQsTWZWh</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:43:49</field>
+		<field name="updated_at">2018-05-22 02:43:49</field>
+		<field name="profile_reminded_at">2018-05-21 16:43:49</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fake4@hitpath.com</field>
+		<field name="password">$2y$10$AI3SwSsIbFKPB1dLCdHXE.eZj9ApkBSMQmPPkMudkBpevtJ61J4TC</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">Zg5bzazPR21cjrJyFOKxEKHCvSypfVg3Mnk7SyPqaooBM7o30a0YIH7kiWUb</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:44:55</field>
+		<field name="updated_at">2018-05-22 02:44:55</field>
+		<field name="profile_reminded_at">2018-05-21 16:44:55</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fake55@hitpath.com</field>
+		<field name="password">$2y$10$4dv0s7IswD7POwO9PCl3EujZj.KMUZqbhe199mcY6cMVkTxjT7fze</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">h8Sut0P1xaWoqnZEkTQqNFTXOqBZugSaOrPLidmeLyX5dnOyZrxMXYiVnPpm</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:46:50</field>
+		<field name="updated_at">2018-05-22 02:46:50</field>
+		<field name="profile_reminded_at">2018-05-21 16:46:50</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fakd11@hitpath.com</field>
+		<field name="password">$2y$10$FaMcuFrkMPZ/igwESLrYgevgIdhMqRQktAHId4ex8pRr46zMRVgQm</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">Ey20nWcSuSZzzq4RTnMYl8vpO6idefAlCDq8uECjQxMi2y71SKoFRwaEhnKU</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:51:36</field>
+		<field name="updated_at">2018-05-22 02:51:36</field>
+		<field name="profile_reminded_at">2018-05-21 16:51:36</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fakefake@hitpath.com</field>
+		<field name="password">$2y$10$kyxZB5BeSyAr5Wawstc5geLdysbFfsky/r5bCF1IXRltWJibIy64e</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">Aw3LVjNxQxVd0hL6YJH8PRl7AwpfEsp84b7Ybw9NF3dvs3LvlGh7QBqhgSXT</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:55:16</field>
+		<field name="updated_at">2018-05-22 02:55:16</field>
+		<field name="profile_reminded_at">2018-05-21 16:55:16</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fakefakefake@hitpath.com</field>
+		<field name="password">$2y$10$tbmCf8kNCTT1nHLy7AZ0KuFpy.pJxbsnCW4KZImUy7dwSjvtiDhi2</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">sQdqJHwuMvJTzdZO543gASkDsf63BHOntg9iNCoLvkzHPHSIcnZmv36dyPzP</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:57:51</field>
+		<field name="updated_at">2018-05-22 02:57:51</field>
+		<field name="profile_reminded_at">2018-05-21 16:57:51</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fake9@hitpath.com</field>
+		<field name="password">$2y$10$qJqeiXeZVvuJWy4k0SPUfeWXf.pUhBNqD46sk0WvrWpCJbQR2s9li</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">dutohFtkS2poP8x5gZAUNHSc7CldwcA1Zx6Wo6iuwFGJ5v94qDMi1xb8RwaS</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 02:59:00</field>
+		<field name="updated_at">2018-05-22 02:59:00</field>
+		<field name="profile_reminded_at">2018-05-21 16:59:00</field>
+	</row>
+	<row>
+		<field name="id">13</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fakehitpath@hitpath.com</field>
+		<field name="password">$2y$10$OZcRUAeNDgVUaA7/ayVuZ.OGjQIY6UcnQdZNg0s9PrMR2v1TUUat.</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">SqAin4XCroBDoSrZKenif86fuoXPwV8zyh8Uyfw6CLwvT5V8KVqE5KIboHFb</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 03:05:08</field>
+		<field name="updated_at">2018-05-22 03:05:08</field>
+		<field name="profile_reminded_at">2018-05-21 17:05:08</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="name"></field>
+		<field name="phone"></field>
+		<field name="email">fake22@hitpath.com</field>
+		<field name="password">$2y$10$2jHe8FDePAGVMrjt6njEzO0unRf6m3C8P2uVNMXilK9CUw.Mkn4Qa</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-22 18:54:40</field>
+		<field name="updated_at">2018-05-22 18:54:40</field>
+		<field name="profile_reminded_at">2018-05-22 08:54:40</field>
+	</row>
+	<row>
+		<field name="id">15</field>
+		<field name="name">Brice Bathel</field>
+		<field name="phone"></field>
+		<field name="email">bbathe1@lsu.edu</field>
+		<field name="password"></field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">1Jk9yIoizdySSHGzNfSzKbfyEaFTPmcpTkdaW7Zws2icmmr0xFpMzUS0gTIu</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-30 02:18:14</field>
+		<field name="updated_at">2018-05-30 02:18:14</field>
+		<field name="profile_reminded_at">2018-05-29 16:18:14</field>
+	</row>
+	<row>
+		<field name="id">16</field>
+		<field name="name">test</field>
+		<field name="phone"></field>
+		<field name="email">test@zendash.com</field>
+		<field name="password">$2y$10$.UxLR581WKvMwVQGsucUFePRFzfTKdgurptDdTwrlF6HfnFlbO08.</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">AlVRC7gnOXiuvTRCV43w42qXK3WLxWph9r1zmhrYtCUc0NJJmuux0oDAOaqJ</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-31 20:33:48</field>
+		<field name="updated_at">2018-05-31 20:33:48</field>
+		<field name="profile_reminded_at">2018-05-31 10:33:48</field>
+	</row>
+	<row>
+		<field name="id">17</field>
+		<field name="name">mark</field>
+		<field name="phone"></field>
+		<field name="email">mark.brody@gmail.com</field>
+		<field name="password">$2y$10$2GMMAXtugdrvXUOL74uH4ukm/Q9uo.ph1zSFvWc1cTdyEa1HYm/4G</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token">szMHuGeLHiFujrASqBct5cBijXkeHcDRNA2F1pInEjPD52kNfNWAoyXEasVD</field>
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-05-31 20:35:26</field>
+		<field name="updated_at">2018-05-31 20:35:27</field>
+		<field name="profile_reminded_at">2018-05-31 10:35:26</field>
+	</row>
+	<row>
+		<field name="id">18</field>
+		<field name="name">nikita</field>
+		<field name="phone"></field>
+		<field name="email">nikita@hitpath.com</field>
+		<field name="password">$2y$10$i6ef0aT1jwRGneIIyp2fx.6Ee5G.3zTUQY/sI90BicrqCqpj7Rp4C</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">0</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-06-09 00:01:36</field>
+		<field name="updated_at">2018-06-09 00:01:36</field>
+		<field name="profile_reminded_at">2018-06-08 14:01:36</field>
+	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="name">testing terms stuff</field>
+		<field name="phone"></field>
+		<field name="email">fake69@hitpath.com</field>
+		<field name="password">$2y$10$ger4sL8RA/nR0t2A0TKWOOb9XEZVH7cAPHP/lI3O91EkeLIdm2vga</field>
+		<field name="active">1</field>
+		<field name="developer">0</field>
+		<field name="verified">1</field>
+		<field name="remember_token" xsi:nil="true" />
+		<field name="key" xsi:nil="true" />
+		<field name="created_at">2018-06-11 19:34:57</field>
+		<field name="updated_at">2018-06-11 19:34:57</field>
+		<field name="profile_reminded_at">2018-06-11 09:34:57</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

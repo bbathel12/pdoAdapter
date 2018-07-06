@@ -1,0 +1,176 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ClassLoader	./vendor/composer/ClassLoader.php	/^class ClassLoader$/;"	c
+ComposerAutoloaderInit2f2a11fa867287787ecba6095b59f3de	./vendor/composer/autoload_real.php	/^class ComposerAutoloaderInit2f2a11fa867287787ecba6095b59f3de$/;"	c
+ComposerStaticInit2f2a11fa867287787ecba6095b59f3de	./vendor/composer/autoload_static.php	/^class ComposerStaticInit2f2a11fa867287787ecba6095b59f3de$/;"	c
+Connector	./src/pdoAdapter/Connector.php	/^class Connector{$/;"	c
+Mysqli	./src/mysqli/Mysqli.php	/^class Mysqli extends Connector{$/;"	c
+Properties	./src/mysqli/Properties.php	/^class Properties{$/;"	c
+__construct	./src/mysqli/MysqliResult.php	/^    public function __construct(?PDOStatement $stmt=null){$/;"	f
+__construct	./src/pdoAdapter/Connector.php	/^    public function __construct($host,$db,$user,$pass)$/;"	f
+__get	./src/mysqli/Mysqli.php	/^    public function __get($propertyName)$/;"	f
+add	./vendor/composer/ClassLoader.php	/^    public function add($prefix, $paths, $prepend = false)$/;"	f
+addClassMap	./vendor/composer/ClassLoader.php	/^    public function addClassMap(array $classMap)$/;"	f
+addPsr4	./vendor/composer/ClassLoader.php	/^    public function addPsr4($prefix, $paths, $prepend = false)$/;"	f
+affectedRows	./src/mysqli/Properties.php	/^    private function affectedRows($object):int$/;"	f
+apcuPrefix	./vendor/composer/ClassLoader.php	/^        $this->apcuPrefix = function_exists('apcu_fetch') && ini_get('apc.enabled') ? $apcuPrefix : null;$/;"	v
+apcuPrefix	./vendor/composer/ClassLoader.php	/^    private $apcuPrefix;$/;"	v
+baseDir	./vendor/composer/autoload_classmap.php	/^$baseDir = dirname($vendorDir);$/;"	v
+baseDir	./vendor/composer/autoload_namespaces.php	/^$baseDir = dirname($vendorDir);$/;"	v
+baseDir	./vendor/composer/autoload_psr4.php	/^$baseDir = dirname($vendorDir);$/;"	v
+buildDsn	./src/pdoAdapter/Connector.php	/^    private function buildDsn($host,$db){$/;"	f
+classMap	./vendor/composer/ClassLoader.php	/^            $this->classMap = $classMap;$/;"	v
+classMap	./vendor/composer/ClassLoader.php	/^            $this->classMap = array_merge($this->classMap, $classMap);$/;"	v
+classMap	./vendor/composer/ClassLoader.php	/^    private $classMap = array();$/;"	v
+classMap	./vendor/composer/autoload_real.php	/^            $classMap = require __DIR__ . '\/autoload_classmap.php';$/;"	v
+classMapAuthoritative	./vendor/composer/ClassLoader.php	/^        $this->classMapAuthoritative = $classMapAuthoritative;$/;"	v
+classMapAuthoritative	./vendor/composer/ClassLoader.php	/^    private $classMapAuthoritative = false;$/;"	v
+clientInfo	./src/mysqli/Properties.php	/^    private function clientInfo($object):string$/;"	f
+clientVersion	./src/mysqli/Properties.php	/^    private function clientVersion($object):int$/;"	f
+close	./src/pdoAdapter/Connector.php	/^    public function close():void{$/;"	f
+connectErrno	./src/mysqli/Properties.php	/^    private function connectErrno($object):string$/;"	f
+connectError	./src/mysqli/Properties.php	/^    private function connectError($object):string$/;"	f
+convertToCamelCase	./src/mysqli/ToCamelCase.php	/^    private function convertToCamelCase(string $string):string$/;"	f
+count	./src/mysqli/MysqliResult.php	/^    public function count(){$/;"	f
+db	./src/pdoAdapter/Connector.php	/^        $this->db   = $db;$/;"	v
+does	./vendor/composer/ClassLoader.php	/^            \/\/ Remember that this class does not exist.$/;"	c
+driver	./src/mysqli/Mysqli.php	/^    protected $driver = "mysql";$/;"	v
+driver	./src/pdoAdapter/Connector.php	/^    protected $driver; \/\/ this must be set in the subclass to the driver string$/;"	v
+dsn	./src/pdoAdapter/Connector.php	/^        $this->dsn = "{$this->driver}:host={$this->host};dbname={$this->db};";$/;"	v
+errno	./src/mysqli/Properties.php	/^    private function errno($object):string$/;"	f
+error	./src/mysqli/Properties.php	/^    private function error($object):string$/;"	f
+errorList	./src/mysqli/Properties.php	/^    private function errorList($object):void$/;"	f
+fallbackDirsPsr0	./vendor/composer/ClassLoader.php	/^                $this->fallbackDirsPsr0 = array_merge($/;"	v
+fallbackDirsPsr0	./vendor/composer/ClassLoader.php	/^            $this->fallbackDirsPsr0 = (array) $paths;$/;"	v
+fallbackDirsPsr0	./vendor/composer/ClassLoader.php	/^    private $fallbackDirsPsr0 = array();$/;"	v
+fallbackDirsPsr4	./vendor/composer/ClassLoader.php	/^                $this->fallbackDirsPsr4 = array_merge($/;"	v
+fallbackDirsPsr4	./vendor/composer/ClassLoader.php	/^            $this->fallbackDirsPsr4 = (array) $paths;$/;"	v
+fallbackDirsPsr4	./vendor/composer/ClassLoader.php	/^    private $fallbackDirsPsr4 = array();$/;"	v
+fetchArray	./src/mysqli/MysqliResult.php	/^    public function fetchArray(int $fetchMode = self::FETCH_ASSOC){$/;"	f
+fetchIterable	./src/mysqli/MysqliResult.php	/^    public function fetchIterable(int $fetchMode = self::FETCH_ASSOC){$/;"	f
+fetchMode	./src/mysqli/MysqliResult.php	/^    public function fetchArray(int $fetchMode = self::FETCH_ASSOC){$/;"	v
+fetchMode	./src/mysqli/MysqliResult.php	/^    public function fetchIterable(int $fetchMode = self::FETCH_ASSOC){$/;"	v
+fieldCount	./src/mysqli/Properties.php	/^    private function fieldCount($object):int$/;"	f
+file	./vendor/composer/ClassLoader.php	/^            $file = $this->findFileWithExtension($class, '.hh');$/;"	v
+file	./vendor/composer/ClassLoader.php	/^            $file = apcu_fetch($this->apcuPrefix.$class, $hit);$/;"	v
+file	./vendor/composer/ClassLoader.php	/^        $file = $this->findFileWithExtension($class, '.php');$/;"	v
+file	./vendor/composer/ClassLoader.php	/^        if ($this->useIncludePath && $file = stream_resolve_include_path($logicalPathPsr0)) {$/;"	v
+files	./vendor/composer/ClassLoader.php	/^     * Turns on searching the include path for class files.$/;"	c
+findFile	./vendor/composer/ClassLoader.php	/^    public function findFile($class)$/;"	f
+findFileWithExtension	./vendor/composer/ClassLoader.php	/^    private function findFileWithExtension($class, $ext)$/;"	f
+first	./vendor/composer/ClassLoader.php	/^        $first = $class[0];$/;"	v
+first	./vendor/composer/ClassLoader.php	/^        $first = $prefix[0];$/;"	v
+get	./src/mysqli/Properties.php	/^    public function get($propertyName,$object)$/;"	f
+getApcuPrefix	./vendor/composer/ClassLoader.php	/^    public function getApcuPrefix()$/;"	f
+getClassMap	./vendor/composer/ClassLoader.php	/^    public function getClassMap()$/;"	f
+getErrors	./src/mysqli/Mysqli.php	/^    public function getErrors(){$/;"	f
+getFallbackDirs	./vendor/composer/ClassLoader.php	/^    public function getFallbackDirs()$/;"	f
+getFallbackDirsPsr4	./vendor/composer/ClassLoader.php	/^    public function getFallbackDirsPsr4()$/;"	f
+getInitializer	./vendor/composer/autoload_static.php	/^    public static function getInitializer(ClassLoader $loader)$/;"	f
+getLoader	./vendor/composer/autoload_real.php	/^    public static function getLoader()$/;"	f
+getMysqlInfo	./src/mysqli/Properties.php	/^    private function getMysqlInfo($object):void$/;"	f
+getPrefixes	./vendor/composer/ClassLoader.php	/^    public function getPrefixes()$/;"	f
+getPrefixesPsr4	./vendor/composer/ClassLoader.php	/^    public function getPrefixesPsr4()$/;"	f
+getUseIncludePath	./vendor/composer/ClassLoader.php	/^    public function getUseIncludePath()$/;"	f
+hasErrors	./src/mysqli/Mysqli.php	/^    public function hasErrors(){$/;"	f
+host	./src/pdoAdapter/Connector.php	/^        $this->host = $host;$/;"	v
+hostInfo	./src/mysqli/Properties.php	/^    private function hostInfo($object):string$/;"	f
+in	./vendor/composer/ClassLoader.php	/^ * In this example, if you try to use a class in the Symfony\\Component$/;"	c
+includeFile	./vendor/composer/ClassLoader.php	/^function includeFile($file)$/;"	f
+info	./src/mysqli/Mysqli.php	/^    protected $info; \/\/ this contains all variables from the client$/;"	v
+info	./src/mysqli/Properties.php	/^    private function info($object):string$/;"	f
+insertId	./src/mysqli/Properties.php	/^    private function insertId($object):string$/;"	f
+is	./vendor/composer/ClassLoader.php	/^     * Finds the path to the file where the class is defined.$/;"	c
+is	./vendor/composer/ClassLoader.php	/^ * This class is loosely based on the Symfony UniversalClassLoader.$/;"	c
+isClassMapAuthoritative	./vendor/composer/ClassLoader.php	/^    public function isClassMapAuthoritative()$/;"	f
+item	./src/mysqli/MysqliResult.php	/^            while( $item = $this->result->fetch( $fetchMode )){$/;"	v
+lastPos	./vendor/composer/ClassLoader.php	/^            while (false !== $lastPos = strrpos($subPath, '\\\\')) {$/;"	v
+lastResponse	./src/mysqli/Mysqli.php	/^        $this->lastResponse = ($result !== false) ? new MysqliResult( $this->pdo->query($query) ) : new MysqliResult();$/;"	v
+lastResponse	./src/mysqli/Mysqli.php	/^    public $lastResponse;\/\/ gotta store this if I want some of the mysql properties to work ¯\\_(ツ)_\/¯$/;"	v
+length	./vendor/composer/ClassLoader.php	/^            $length = strlen($prefix);$/;"	v
+loadClass	./vendor/composer/ClassLoader.php	/^    public function loadClass($class)$/;"	f
+loadClassLoader	./vendor/composer/autoload_real.php	/^    public static function loadClassLoader($class)$/;"	f
+loader	./vendor/composer/ClassLoader.php	/^ *     $loader = new \\Composer\\Autoload\\ClassLoader();$/;"	v
+loader	./vendor/composer/ClassLoader.php	/^ * ClassLoader implements a PSR-0, PSR-4 and classmap class loader.$/;"	c
+loader	./vendor/composer/autoload_real.php	/^        self::$loader = $loader = new \\Composer\\Autoload\\ClassLoader();$/;"	v
+loader	./vendor/composer/autoload_real.php	/^    private static $loader;$/;"	v
+logicalPathPsr0	./vendor/composer/ClassLoader.php	/^            $logicalPathPsr0 = strtr($class, '_', DIRECTORY_SEPARATOR) . $ext;$/;"	v
+logicalPathPsr0	./vendor/composer/ClassLoader.php	/^            $logicalPathPsr0 = substr($logicalPathPsr4, 0, $pos + 1)$/;"	v
+logicalPathPsr4	./vendor/composer/ClassLoader.php	/^        $logicalPathPsr4 = strtr($class, '\\\\', DIRECTORY_SEPARATOR) . $ext;$/;"	v
+lookup	./vendor/composer/ClassLoader.php	/^     * Should class lookup fail if not found in the current class map?$/;"	c
+map	./src/mysqli/MysqliResult.php	/^    public function map(callable $func){$/;"	f
+map	./vendor/composer/ClassLoader.php	/^        \/\/ class map lookup$/;"	c
+map	./vendor/composer/ClassLoader.php	/^     * that have not been registered with the class map.$/;"	c
+map	./vendor/composer/autoload_real.php	/^            $map = require __DIR__ . '\/autoload_namespaces.php';$/;"	v
+map	./vendor/composer/autoload_real.php	/^            $map = require __DIR__ . '\/autoload_psr4.php';$/;"	v
+methodName	./src/mysqli/Properties.php	/^        $methodName = $this->convertToCamelCase($propertyName);$/;"	v
+missingClasses	./vendor/composer/ClassLoader.php	/^    private $missingClasses = array();$/;"	v
+mysql	./autoload_test.php	/^$mysql = new Mysqli( "localhost","homestead","homestead","secret" );$/;"	v
+mysql	./src/mysqli/test.php	/^$mysql       = new Mysqli( "localhost","homestead","homestead","secret" );$/;"	v
+mysqlResult	./src/mysqli/test.php	/^$mysqlResult = $mysql->query("select * from users");$/;"	v
+mysqliResult	./src/mysqli/MysqliResult.php	/^class mysqliResult{$/;"	c
+name	./vendor/composer/ClassLoader.php	/^            \/\/ PEAR-like class name$/;"	c
+name	./vendor/composer/ClassLoader.php	/^            \/\/ namespaced class name$/;"	c
+namespace	./vendor/composer/autoload_real.php	/^            foreach ($map as $namespace => $path) {$/;"	v
+newString	./src/mysqli/ToCamelCase.php	/^        $newString = implode('',$words);$/;"	v
+opt	./src/pdoAdapter/Connector.php	/^        $opt =[$/;"	v
+or	./vendor/composer/ClassLoader.php	/^     * Loads the given class or interface.$/;"	c
+pass	./src/pdoAdapter/Connector.php	/^        $this->pass = $pass;$/;"	v
+pathEnd	./vendor/composer/ClassLoader.php	/^                    $pathEnd = DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $lastPos + 1);$/;"	v
+pdo	./src/pdoAdapter/Connector.php	/^        $this->pdo  = new PDO($this->dsn,$this->user,$this->pass);$/;"	v
+pdo	./src/pdoAdapter/Connector.php	/^        $this->pdo = null;$/;"	v
+pdo	./src/pdoAdapter/Connector.php	/^    protected $pdo;$/;"	v
+pos	./vendor/composer/ClassLoader.php	/^        if (false !== $pos = strrpos($class, '\\\\')) {$/;"	v
+prefix	./vendor/composer/ClassLoader.php	/^            foreach ($this->prefixesPsr0[$first] as $prefix => $dirs) {$/;"	v
+prefixDirsPsr4	./vendor/composer/ClassLoader.php	/^    private $prefixDirsPsr4 = array();$/;"	v
+prefixDirsPsr4	./vendor/composer/autoload_static.php	/^    public static $prefixDirsPsr4 = array ($/;"	v
+prefixLengthsPsr4	./vendor/composer/ClassLoader.php	/^    private $prefixLengthsPsr4 = array();$/;"	v
+prefixLengthsPsr4	./vendor/composer/autoload_static.php	/^    public static $prefixLengthsPsr4 = array ($/;"	v
+prefixesPsr0	./vendor/composer/ClassLoader.php	/^    private $prefixesPsr0 = array();$/;"	v
+prepend	./vendor/composer/ClassLoader.php	/^    public function add($prefix, $paths, $prepend = false)$/;"	v
+prepend	./vendor/composer/ClassLoader.php	/^    public function addPsr4($prefix, $paths, $prepend = false)$/;"	v
+properties	./src/mysqli/Mysqli.php	/^        $this->properties = new Properties();$/;"	v
+properties	./src/pdoAdapter/Connector.php	/^    protected $properties;$/;"	v
+protocolVersion	./src/mysqli/Properties.php	/^    private function protocolVersion($object):int$/;"	f
+query	./src/mysqli/Mysqli.php	/^    public function query(String $query): MysqliResult{$/;"	f
+register	./vendor/composer/ClassLoader.php	/^    public function register($prepend = false)$/;"	f
+result	./src/mysqli/Mysqli.php	/^        $result = $this->pdo->query($query);$/;"	v
+result	./src/mysqli/MysqliResult.php	/^        $this->result = $stmt;$/;"	v
+result	./src/mysqli/MysqliResult.php	/^    private $result;$/;"	v
+result	./src/mysqli/Properties.php	/^            $result = new MysqliResult($object->pdo->query("Show Variables"));$/;"	v
+result	./src/mysqli/Properties.php	/^        $result = new MysqliResult($object->pdo->query("SELECT CONNECTION_ID() as id"));$/;"	v
+search	./vendor/composer/ClassLoader.php	/^                $search = $subPath.'\\\\';$/;"	v
+serverInfo	./src/mysqli/Properties.php	/^    private function serverInfo($object):string$/;"	f
+set	./vendor/composer/ClassLoader.php	/^    public function set($prefix, $paths)$/;"	f
+setApcuPrefix	./vendor/composer/ClassLoader.php	/^    public function setApcuPrefix($apcuPrefix)$/;"	f
+setClassMapAuthoritative	./vendor/composer/ClassLoader.php	/^    public function setClassMapAuthoritative($classMapAuthoritative)$/;"	f
+setProperties	./src/mysqli/Mysqli.php	/^    public function setProperties(){$/;"	f
+setPsr4	./vendor/composer/ClassLoader.php	/^    public function setPsr4($prefix, $paths)$/;"	f
+setUseIncludePath	./vendor/composer/ClassLoader.php	/^    public function setUseIncludePath($useIncludePath)$/;"	f
+sqlstate	./src/mysqli/Properties.php	/^    private function sqlstate($object)$/;"	f
+stmt	./src/mysqli/MysqliResult.php	/^    public function __construct(?PDOStatement $stmt=null){$/;"	v
+subPath	./vendor/composer/ClassLoader.php	/^                $subPath = substr($subPath, 0, $lastPos);$/;"	v
+subPath	./vendor/composer/ClassLoader.php	/^            $subPath = $class;$/;"	v
+threadId	./src/mysqli/Properties.php	/^        $threadId = $result->fetchArray()['id'];$/;"	v
+threadId	./src/mysqli/Properties.php	/^    private function threadId($object)$/;"	f
+toReturn	./src/mysqli/MysqliResult.php	/^                $toReturn = $func($item);$/;"	v
+toReturn	./src/mysqli/MysqliResult.php	/^        $toReturn = [];$/;"	v
+under	./vendor/composer/ClassLoader.php	/^ * the autoloader will first look for the class under the component\/$/;"	c
+unregister	./vendor/composer/ClassLoader.php	/^    public function unregister()$/;"	f
+useIncludePath	./vendor/composer/ClassLoader.php	/^        $this->useIncludePath = $useIncludePath;$/;"	v
+useIncludePath	./vendor/composer/ClassLoader.php	/^    private $useIncludePath = false;$/;"	v
+useStaticLoader	./vendor/composer/autoload_real.php	/^        $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());$/;"	v
+user	./src/pdoAdapter/Connector.php	/^        $this->user = $user;$/;"	v
+vendorDir	./vendor/composer/autoload_classmap.php	/^$vendorDir = dirname(dirname(__FILE__));$/;"	v
+vendorDir	./vendor/composer/autoload_namespaces.php	/^$vendorDir = dirname(dirname(__FILE__));$/;"	v
+vendorDir	./vendor/composer/autoload_psr4.php	/^$vendorDir = dirname(dirname(__FILE__));$/;"	v
+versionInt	./src/mysqli/Properties.php	/^        $versionInt = $versionPartInts[0] * 10000;$/;"	v
+versionPartInts	./src/mysqli/Properties.php	/^        $versionPartInts = array_map($/;"	v
+versionParts	./src/mysqli/Properties.php	/^        $versionParts = explode('.',$object->info['version']);$/;"	v
+warningCount	./src/mysqli/Properties.php	/^    private function warningCount($object)$/;"	f
+words	./src/mysqli/ToCamelCase.php	/^        $words = array_map($/;"	v
+words	./src/mysqli/ToCamelCase.php	/^        $words = explode('_',$string);$/;"	v
