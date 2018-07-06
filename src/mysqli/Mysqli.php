@@ -12,7 +12,11 @@ class Mysqli extends Connector{
 
     public $lastResponse;// gotta store this if I want some of the mysql properties to work ¯\_(ツ)_/¯
 
-    public function setProperties(){
+    /*
+     * hook from pdoadapter to set the properties object
+     * to replace all properties with functions
+     */
+    protected function setProperties(){
         $this->properties = new Properties();
     }
 
