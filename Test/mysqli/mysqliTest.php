@@ -68,7 +68,8 @@ class mysqliTest extends TestCase{
 
     public function testNumRows()
     {
-        $conn = $this->getConnection();
+        $conn   = $this->getConnection();
+        $result = $this->mysql->query("select * from users");
         $this->assertSame(19, $this->mysql->num_rows);
     }
 
