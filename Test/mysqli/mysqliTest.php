@@ -19,7 +19,7 @@ class mysqliTest extends TestCase{
     public function getConnection()
     {
         if (is_null($this->mysql)){
-            $this->mysql = new Mysqli( "localhost","zd_test","homestead","secret" );
+            $this->mysql = new Mysqli( "localhost","homestead","homestead","secret" );
             $this->conn = $this->createDefaultDbConnection($this->mysql->getPDO(),"zd_test");
         }
         return $this->conn;
@@ -27,7 +27,7 @@ class mysqliTest extends TestCase{
 
     public function getDataSet()
     {
-        return $this->createMySQLXMLDataSet(__DIR__.'/../Fixtures/testDB.xml');
+        return $this->createMySQLXMLDataSet(__DIR__.'/../Fixtures/testDb.xml');
     }
 
     public function testQuery()
