@@ -58,4 +58,18 @@ class mysqliTest extends TestCase{
         // test getErrors();
         $this->assertNotContains(1064,$this->mysql->getErrors());
     }
+
+    public function testAffectedRows()
+    {
+        $conn   = $this->getConnection();
+        $result = $this->mysql->query("insert into users (name,email) values ('brice','brice'),('brice2','brice2')");
+        $this->assertSame(2,$this->mysql->affected_rows);
+    }
+
+    public function testNumRows()
+    {
+        $conn = $this->getConnection();
+        $this->assertSame(19, $this->mysql->num_rows);
+    }
+
 }

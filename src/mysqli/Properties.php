@@ -6,7 +6,7 @@ use PDOAdapter\Properties as AbstractProperties;
 
 
 class Properties extends AbstractProperties{
-    
+
     use ToCamelCase;
 
     public function get($propertyName,$object)
@@ -43,7 +43,7 @@ class Properties extends AbstractProperties{
     {
         return $object->lastResponse->count();
     }
-    
+
     private function numRows($object):int
     {
         return $object->lastResponse->count();
@@ -58,7 +58,7 @@ class Properties extends AbstractProperties{
     {
         return $object->pdo->errorInfo();
     }
-    
+
     private function errno($object):string
     {
         return $object->lastResponse->errorCode();
@@ -111,7 +111,7 @@ class Properties extends AbstractProperties{
             },
             $versionParts
         );
-        
+
         $versionInt = $versionPartInts[0] * 10000;
         $versionInt += $versionPartInts[1] * 100;
         $versionInt += $versionPartInts[2];
@@ -146,16 +146,16 @@ class Properties extends AbstractProperties{
     private function info($object):string
     {
     }
-    
+
     private function insertId($object):string
     {
         $object->lastInsertId();
     }
-    
+
     private function sqlstate($object)
     {
     }
-    
+
     private function threadId($object)
     {
         $result = new MysqliResult($object->pdo->query("SELECT CONNECTION_ID() as id"));
