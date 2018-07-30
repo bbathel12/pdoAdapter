@@ -2,6 +2,7 @@
     "name": "brice/pdo",
     "description": "an adapter for mysqli to use pdo",
     "type": "library",
+    "version":"1.0.0",
     "authors": [
         {
             "name": "Brice Bathel",
