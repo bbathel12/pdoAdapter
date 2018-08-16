@@ -60,6 +60,16 @@ class Mysqli extends Connector{
         return $this->lastResponse;
     }
 
+    /*
+     * set the charset of the db
+     * @param string $charset
+     * @return bool true on success false on failure
+     */
+    public function setCharset(string $charset="utf-8")
+    {
+        return $this->pdo->exec("set names $charset") === 0;
+    }
+
 
     public function hasErrors():bool
     {
