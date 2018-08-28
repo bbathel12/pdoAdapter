@@ -5,6 +5,8 @@ namespace PDO\Mysqli;
 use PDOAdapter\Connector;
 
 class Mysqli extends Connector{
+    
+    use ToCamelCase;
 
     protected $driver = "mysql";
     protected $info;// this contains all variables from the client
@@ -32,6 +34,14 @@ class Mysqli extends Connector{
     public function __get($propertyName)
     {
        return $this->properties->get($propertyName,$this);
+    }
+
+    public function __call($functionName,$args)
+    {
+        $methodName = $this->toCamelCase($functionName);
+        if (method_exists($this,$methodName)){
+            return call_user_func([$this,$methodName],$args);
+        }
     }
 
     public function getPdo()
@@ -68,6 +78,11 @@ class Mysqli extends Connector{
     public function setCharset(string $charset="utf-8")
     {
         return $this->pdo->exec("set names $charset") === 0;
+    }
+
+    public function realEscapeString(string $sql)
+    {
+        return $this->pdo->quote($sql);
     }
 
 
