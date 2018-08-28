@@ -38,9 +38,9 @@ class Mysqli extends Connector{
 
     public function __call($functionName,$args)
     {
-        $methodName = $this->toCamelCase($functionName);
+        $methodName = $this->convertToCamelCase($functionName);
         if (method_exists($this,$methodName)){
-            return call_user_func([$this,$methodName],$args);
+            return $this->$methodName(...$args);
         }
     }
 
